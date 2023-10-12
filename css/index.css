@@ -1,0 +1,155 @@
+/* Apply box-sizing and font styles to all elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Styling for the header section */
+.header {
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    max-width: 1500px;
+}
+
+/* Styling for the main title within the header */
+.main-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+/* Styling for the navigation menu bar */
+.menu {
+    position: sticky;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+    max-width: 1500px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    z-index: 100;
+}
+
+/* Styling for the menu items within the navigation menu */
+.menu-items {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling for rows, typically used for content sections */
+.row {
+    display: flex;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    max-width: 1500px;
+}
+
+/* Styling for articles within a row */
+.article {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+/* Styling for small-sized columns within a row */
+.small {
+    flex-basis: 25%;
+}
+
+/* Styling for large-sized columns within a row */
+.big {
+    flex-basis: 50%;
+}
+
+/* Styling for article images */
+.article-image {
+    width: 100%;
+}
+
+/* Styling for small articles within the web */
+.insideWeb-article-small {
+    width: 30%;
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+
+/* Styling for article titles */
+.article-title {
+    text-align: center;
+}
+
+/* Styling for paragraphs */
+p {
+    text-align: justify;
+}
+
+/* Styling for page section #page1 */
+#page1 {
+    height: 90vh; /* Make each section take up the full viewport height */
+    display: flex;
+    align-items: top; /* Align content at the top */
+    justify-content: left; /* Justify content to the left */
+    font-size: 16px;
+}
+
+/* Styling for page section #page2 */
+#page2 {
+    height: 145vh; /* Make each section take up the full viewport height */
+    display: flex;
+    align-items: top;
+    justify-content: left;
+    font-size: 16px;
+}
+
+/* Styling for page section #page3 */
+#page3 {
+    height: 90vh; /* Make each section take up the full viewport height */
+    display: flex;
+    align-items: top;
+    justify-content: left;
+    font-size: 16px;
+}
+
+/* Styling for the footer section */
+.footer {
+    height: 80px;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/* Styling for the page navigation menu */
+.page-nav {
+    position: fixed;
+    top: 50%; /* Adjust this value for the desired vertical position */
+    transform: translateY(-50%);
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    display: none; /* Initially hide the page navigation */
+}
+
+/* Styling for links within the page navigation menu */
+.page-nav a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
